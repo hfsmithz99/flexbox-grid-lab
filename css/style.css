@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;*/
+  /*border: 1px solid red;*/
 }
 
 body {
@@ -12,10 +12,9 @@ body {
 
 main {
     display: grid;
-  grid-template-columns: [col1] 200px [col2] 200px [col3];
+  grid-template-columns: [col1] 150px [col2] 150px [col3];
   grid-template-rows: [row1] 20px [row2] 100px [row3] 50px [row4] 30px [row5] 30px [row6] 30px [row7] 30px [row8] 50px [row9];
-  height: 100vh;
-  width: 100vw;
+
 }
 
 header {
@@ -24,6 +23,7 @@ header {
   grid-column-end: col3;
   grid-row-start: row1;
   grid-row-end: row2;
+  text-align: right;
 }
 
 .programmer {
@@ -35,6 +35,10 @@ header {
   grid-row-end: row3;
   border-radius: 50%;
   max-height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid green
 }
 
 .name {
@@ -44,6 +48,7 @@ header {
   grid-column-end: col3;
   grid-row-start: row3;
   grid-row-end: row4;
+  align-items: center;
 }
 
 .box2 {
@@ -51,12 +56,14 @@ header {
   grid-column-end: col3;
   grid-row-start: row4;
   grid-row-end: row6;
+  background-color: #e6e6e6;
 }
 
 .stars {
 
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .job {
@@ -74,6 +81,9 @@ header {
   grid-column-end: col3;
   grid-row-start: row6;
   grid-row-end: row7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cost {
@@ -81,6 +91,9 @@ header {
   grid-column-end: col3;
   grid-row-start: row7;
   grid-row-end: row8;
+  display: flex;
+  justify-content: center;
+  color: gray
 }
 
 .call {
@@ -89,6 +102,10 @@ header {
   grid-row-start: row8;
   grid-row-end: row9;
   background-color: #82ce8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .message {
@@ -97,4 +114,8 @@ header {
   grid-row-start: row8;
   grid-row-end: row9;
   background-color: #74ba82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
